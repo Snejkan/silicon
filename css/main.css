@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*, * ::before, * ::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary: #6366f1;
+
+    --color-body-text: #565973;
+    --color-body-background: #ffffff;    
+    --color-heading-text: #0B0F19;
+
+    --color-button-text: #ffffff;   
+    --color-button-background: var(--primary);
+    --color-button-hover-background: #0B0F19;
+
+    --color-button-download-text: #ffffff;
+    --color-button-download-background: #0B0F19;
+    --color-button-download-hover-background: #0B0F19;
+}
+
+body {    
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    background-color: var(--color-body-background);
+    color: var(--color-body-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading-text);
+}
+
+button, .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 35px;    
+   
+    color: var(--color-button-text);
+    background-color: var(--color-button-background);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.10s ease-in-out;    
+
+    &:hover {
+        
+        background-color: var(--color-button-hover-background);
+    }
+
+    img {
+        height: 100%;
+        width:auto;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn-signin-text {
+    display: none;
+
+    @media (width >= 768px) {
+        display: block;
+        
+    }
+}
+
+.btn-download {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    
+     
+
+    .btn-area {
+        padding: 10px 20px;
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:    "icon text" 
+                                "icon store";
+
+        background-color: var(--color-button-download-background);
+        color: var(--color-button-download-text);
+        text-decoration: none;
+        font-size: 0.7rem;                   
+
+        .download-app-text {
+            grid-area: text;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-align: left;
+        }
+
+        .download-app-icon {
+            grid-area: icon;
+            height: 100%;
+        }
+        
+        .download-app-store {
+            grid-area: store;
+            font-size: 1.5em;
+            font-weight: 600;   
+            text-align: left;     
+        }
+    }
+
+}
+
+.darkmode {
+    display: none;
+
+    @media (width >= 768px) {
+        display: block;
+        
+    }
+}
+
+header {
+
+    .header-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}
+
+.hero {
+    background: #FFFFFF;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(99, 102, 241, 0.07) 83%); 
+    padding-top: 6rem;
+    
+    padding-bottom: 5rem;
+
+    @media (width >=768px) {
+        padding-bottom: 0;
+    }
+    
+
+    .hero-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+
+        @media (width >=768px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            text-align: left;                
+        }
+
+        
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+
+            .hero-title{
+                font-size: 56px;
+                font-weight: 800;
+            }
+
+            .hero-ingress{
+                font-size: 18px;
+                font-weight: 400;
+
+            }
+
+            .app-download-buttons {
+                margin-top: 1.5rem;
+                display: grid;
+                grid-template-columns: 200px 200px;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+                @media (width >=768px) {
+                    justify-content: start;
+                }
+
+                
+            }
+
+        }
+
+        .hero-image {
+            display: none;
+
+            @media (width >= 768px) {
+                display: flex;
+                
+            }
+
+ 
+        }
+    }
+}
