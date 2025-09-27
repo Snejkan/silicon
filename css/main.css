@@ -31,6 +31,10 @@ body {
     color: var(--color-body-text);
 }
 
+section {
+    padding: 40px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-heading-text);
 }
@@ -193,6 +197,7 @@ header {
                 font-size: 18px;
                 font-weight: 400;
 
+
             }
 
             .app-download-buttons {
@@ -222,5 +227,31 @@ header {
 
  
         }
+
+        
     }
+}
+
+.brands {
+    background: #FFFFFF;
+
+    .brands-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center; 
+
+        @media (width >=768px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            text-align: center;                
+        }
+
+
+    }
+}
+
+
+*{
+    outline:1px solid red
 }
