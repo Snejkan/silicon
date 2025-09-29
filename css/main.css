@@ -251,6 +251,65 @@ header {
     }
 }
 
+.features {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px;
+}
+
+.phone img {
+  width: 320px; /* byt till din mobilbild */
+  border-radius: 20px;
+}
+
+.features-content {
+  max-width: 600px;
+}
+
+.features-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.features-content p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 40px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-item .icon {
+  background: #f3f0ff;
+  color: #8b5cf6;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.feature-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.feature-item p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
 
 *{
     outline:1px solid red
