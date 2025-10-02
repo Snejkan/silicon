@@ -188,12 +188,12 @@ header {
             gap: 1rem;
             
 
-            .hero-title{
+            .hero-title {
                 font-size: 56px;
                 font-weight: 800;
             }
 
-            .hero-ingress{
+            .hero-ingress {
                 font-size: 18px;
                 font-weight: 400;
 
@@ -278,7 +278,7 @@ header {
         
         .features-content {
             display: flex;
-            flex-direction: col;
+            flex-direction: column;
             gap: 1rem;
             
 
@@ -311,6 +311,40 @@ header {
 
         
     }
+
+    
+}
+
+.how-does-it-work {
+    text-align: center;
+    ;
+    
+
+    .phone-images {
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+
+    text-align: center;
 }
 
 
