@@ -275,29 +275,6 @@ header {
             text-align: left;                
         }
 
-        
-        .features-content {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            
-
-            .features-title {
-                font-size: 56px;
-                font-weight: 800;
-            }
-
-            .features-ingress{
-                font-size: 18px;
-                font-weight: 400;
-
-
-            }
-
-            
-
-        }
-
         .features-image {
             display: none;
 
@@ -310,6 +287,23 @@ header {
         }
 
         
+        .features-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            
+            
+
+            
+
+
+
+        }
+
+        
+
+        
     }
 
     
@@ -317,7 +311,7 @@ header {
 
 .how-does-it-work {
     text-align: center;
-    ;
+    
     
 
     .phone-images {
@@ -326,6 +320,8 @@ header {
         justify-content: center;
     }
 }
+
+
 
 
 
