@@ -231,11 +231,12 @@ header {
 }
 
 .brands {
-    background: #FFFFFF;
+   display: flex;
+   gap: 10 px;
     
     .brands-logos {
         display: flex;
-       gap: 2px;
+        justify-content: space-between;
     }
     
 
@@ -266,6 +267,8 @@ header {
 
             @media (width >= 768px) {
                 display: flex;
+
+                justify-content: center;
                 
             }            
         }
@@ -319,7 +322,7 @@ header {
     .phone-images {
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
 
         @media (width >=768px) {
         padding-bottom: 0;
