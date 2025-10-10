@@ -64,10 +64,7 @@ button, .btn {
     }
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
+
 
 .container {
     width: 100%;
@@ -233,6 +230,17 @@ header {
     }
 }
 
+.brands {
+    background: #FFFFFF;
+    
+    .brands-logos {
+        display: flex;
+       gap: 2px;
+    }
+    
+
+}
+
 .features {
     background: #FFFFFF;     
     padding-top: 6rem;    
@@ -259,9 +267,7 @@ header {
             @media (width >= 768px) {
                 display: flex;
                 
-            }
-
- 
+            }            
         }
 
         
@@ -283,55 +289,47 @@ header {
                 font-size: 18px;
                 font-weight: 400;
 
-
             }
-    
-
-    
-
-        
-
+ 
+                 
+          
         
     }
 
     
 }
 
-.brands-logos {
-    display: flex;
-    border-radius: 10px;
-    height: auto;
-    gap: 1rem;
-    
-}
-
-
-
-
-
-
 .how-does-it-work {
-    
     text-align: center;
+    box-sizing: border-box;
+    margin: 0; 
     
+    @media (width >=768px) {
+        padding-bottom: 0;
+    }
 
-  
+    .how-does-it-work-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
 
-    
+    }
 
     .phone-images {
         display: flex;
+        width: 100%;
+        justify-content: center;
 
+        @media (width >=768px) {
+        padding-bottom: 0;
+    }
     }
 
     
-
-    
- 
-   
-
- 
 }
+
+
 
 
 .footer {
@@ -340,4 +338,6 @@ header {
     justify-content: center;
 }
 
-
+* {
+    outline: 1px solid red;
+}
